@@ -36,3 +36,104 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.ull{
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: "pink";
+}
+
+
+.li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.lii{
+  float: right;
+  border-right:1px solid #bbb;
+}
+
+.container {
+    padding: 2px 16px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+
+.form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    
+}
+.group-buttons{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    flex-direction: row;
+    background: bisque;
+}
+
+.blogbtn-style{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+  width: 50%;
+  height: 300px;
+  
+  display: flex;
+}
+
+.main div {
+  -ms-flex: 1;  /* IE 10 */  
+  flex: 1;
+  
+}
+
+.has-search .form-control {
+    padding-left: 2rem;
+}
+
+input[type=search] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
+
+

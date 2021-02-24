@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Form from './components/Postform'
+import List from './components/Postlist'
+import './App.css'
+import {BrowserRouter,Route, Link} from 'react-router-dom'
+function App(){
+   
+    return (
+        <BrowserRouter>
+        <div >
+       {
+           <ul className="ull">
+            <li className="li">
+            <div>
+           <button> <Link  to='/form'>NEW POST </Link></button>
+             </div>
+            </li>
+            <li className="lii">
+             <div>
+              <button><Link to="/list" >PUBISHED</Link></button>
+              </div>
+            </li>
+           </ul>
+       }
+            
+        
+        
+       
+        
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+         <Route path='/form' component={Form} exact={true}/>
+         <Route path="/list" component={List} exact={true}/>
+
+        </div>
+        
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App
